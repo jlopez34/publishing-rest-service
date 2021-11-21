@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @CrossOrigin(origins = "http://localhost:8090")
 @RestController
 @RequestMapping("/news")
@@ -16,8 +18,14 @@ public class PublishingController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public PublishingResponse searchNews() {
+    public List<PublishingResponse> searchNews() {
         return publishingService.searchNews();
+    }
+
+    @DeleteMapping("/remove/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Boolean removeArticleById(@PathVariable String id) {
+        return publishingService.removeArticleById(id);
     }
 
     @GetMapping("/article")
