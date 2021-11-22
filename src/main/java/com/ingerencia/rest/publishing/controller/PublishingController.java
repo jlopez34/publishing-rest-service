@@ -29,7 +29,7 @@ public class PublishingController {
     }
 
     @GetMapping("/article")
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.GONE)
     public void searchNewsArticle() {
          publishingService.upgradeNews();
     }

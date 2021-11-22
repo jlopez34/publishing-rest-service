@@ -51,6 +51,9 @@ logging:
   level:
     root: INFO
 
+jobs:
+  enabled: true
+
 services:
   algolia:
     endpoint: https://hn.algolia.com/api/v1/search_by_date?query=java
