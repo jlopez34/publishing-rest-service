@@ -53,6 +53,7 @@ logging:
 
 jobs:
   enabled: true
+  delay: 60000
 
 services:
   algolia:
