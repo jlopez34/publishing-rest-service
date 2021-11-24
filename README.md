@@ -25,7 +25,7 @@ Most Spring Boot applications need minimal Spring configuration.
 | GET       | http://localhost:8090/news/service-test | Validate the hacker news service up|
 | DELETE    | http://localhost:8090/news/{id}         | Remove papers by id|
 
-* Swagger Documentation : 
+* Swagger Documentation : [https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json][https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json]
 
 ### Features
 
@@ -77,5 +77,7 @@ Run `./gradlew test` to run the unit tests. These should all pass if your soluti
 **Please** check that all the unit tests pass when you run `./gradlew clean test`, rather than solely running them from inside your IDE.
 
 [https://github.com/jlopez34/publishing-rest-service]: https://github.com/jlopez34/publishing-rest-service
+
+[https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json]: https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json
 
 
