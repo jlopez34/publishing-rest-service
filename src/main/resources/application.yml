@@ -1,0 +1,63 @@
+server:
+  port: 8090
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-exception: true
+reflectoring:
+  trace: true
+
+
+spring:
+  application:
+    name: manage-users
+  h2:
+    console:
+      enabled: true
+  datasource:
+    initialization-mode: always
+    url: jdbc:h2:~/managedb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+    hikari:
+      connection-timeout: 6000
+      initialization-fail-timeout: 0
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        enable_lazy_load_no_trans: true
+        ddl-auto: none
+        entity-manager:
+          packagesToScan: com
+  data:
+    mongodb:
+      database: publishing_db
+      port: 27017
+
+jwt:
+  header: Authorization
+  secret: nisum-challenge
+  expiration: 604800
+  route:
+    authentication:
+      path: /auth
+      refresh: /refresh
+
+logging:
+  level:
+    root: INFO
+
+jobs:
+  enabled: true
+  delay: 600000
+
+services:
+  algolia:
+    endpoint: https://hn.algolia.com/api/v1/search_by_date?query=java
+    headers:
+      name: user-agent
+      value: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
