@@ -25,7 +25,7 @@ Most Spring Boot applications need minimal Spring configuration.
 | GET       | http://localhost:8090/news/service-test | Validate the hacker news service up|
 | DELETE    | http://localhost:8090/news/{id}         | Remove papers by id|
 
-* Swagger Documentation : [https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json][https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json]
+* Swagger Documentation : 
 
 ### Features
 
@@ -70,7 +70,7 @@ Solution must use
 1. You should to make clone project [https://github.com/jlopez34/publishing-rest-service][https://github.com/jlopez34/publishing-rest-service]
 2. Run `./gradlew clean build`
 3. Run `./gradlew bootRun`   
-3. Download Postman Collection:
+3. Download Postman Collection:[https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json][https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json]
 
 #### Test
 Run `./gradlew test` to run the unit tests. These should all pass if your solution has been implemented correctly.<br>
