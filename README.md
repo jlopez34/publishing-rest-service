@@ -62,7 +62,16 @@ Solution must use
 * `Gradle`
 * `Mockito`
 * `Spring Boot 2.5.7`
+* `MongoDB`
 
+### MongoDB Installation
+#### Mac
+1. Open terminal console
+2. Run `xcode-select --install`
+3. Run `brew tap mongodb/brew`
+4. Run `brew install mongodb-community@5.0`
+5. Run `brew services start mongodb-community@5.0`
+6. Test service `mongosh "mongodb://localhost:27017"`
 
 ### Build and Tests
 #### Build
