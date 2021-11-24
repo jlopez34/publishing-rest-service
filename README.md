@@ -76,6 +76,10 @@ Solution must use
 Run `./gradlew test` to run the unit tests. These should all pass if your solution has been implemented correctly.<br>
 **Please** check that all the unit tests pass when you run `./gradlew clean test`, rather than solely running them from inside your IDE.
 
+[Go to Install Publishing web][https://github.com/jlopez34/publishing-web]
+
+[Go to Install Publishing web]:https://github.com/jlopez34/publishing-web
+
 [https://github.com/jlopez34/publishing-rest-service]: https://github.com/jlopez34/publishing-rest-service
 
 [https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json]: https://github.com/jlopez34/publishing-rest-service/blob/master/env/ingerencia-challenge.postman_collection.json
