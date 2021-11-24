@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:8090")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/news")
 public class PublishingController {
@@ -22,13 +22,13 @@ public class PublishingController {
         return publishingService.searchNews();
     }
 
-    @DeleteMapping("/remove/{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Boolean removeArticleById(@PathVariable String id) {
         return publishingService.removeArticleById(id);
     }
 
-    @GetMapping("/article")
+    @GetMapping("/service-test")
     @ResponseStatus(HttpStatus.GONE)
     public void searchNewsArticle() {
          publishingService.upgradeNews();
